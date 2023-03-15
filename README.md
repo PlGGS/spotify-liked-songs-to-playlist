@@ -3,7 +3,7 @@ This script allows you to copy your Liked Songs on Spotify to an actual playlist
 
 This solves an issue where Spotify won't play your Liked Songs on devices other than mobile.
 
-Before running, make sure to do the following:
+Setup:
 
 1. Install spotipy using pip
 2. Create a new playlist or choose an existing one within the Spotify webapp
