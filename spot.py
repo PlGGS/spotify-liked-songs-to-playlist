@@ -15,7 +15,9 @@ def get_liked_songs():
     while results['next']:
         results = sp.next(results)
         tracks.extend(results['items'])
-    return tracks
+        
+    # We reverse the tracks, because Liked Songs on Spotify are added top to bottom
+    return reversed(tracks)
 
 for idx, item in enumerate(get_liked_songs()):
     track = item['track']
